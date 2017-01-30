@@ -7,12 +7,14 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "firebase": "^3.6.7",
     "flux": "^3.1.2",
     "keymirror": "^0.1.1",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
-    "superagent": "^3.4.0"
+    "shortid": "^2.2.6",
+    "uuid": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

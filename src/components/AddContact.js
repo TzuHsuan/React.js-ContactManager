@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import {Button, Panel, FormGroup} from 'react-bootstrap';
 import AppActions from '../actions/AppActions';
 
+var shortid = require('shortid');
+
 class AddContact extends Component {
   constructor(props){
     super(props);
     this.state = {
       newContact: {
+        id:'',
         name:'',
         email:'',
         phone:''
@@ -16,6 +19,7 @@ class AddContact extends Component {
   
   handleSubmit(event){
     this.setState({newContact:{
+      id: shortid.generate(),
       name: this.refs.name.value,
       email: this.refs.email.value,
       phone: this.refs.phone.value

@@ -39,15 +39,15 @@ onChange(){
 }
 
   render() {
-  let ContactListItem;
+  let ContactList;
   if(this.state.contacts){
-    ContactListItem = this.state.contacts.map(contact => getContactListItem(contact));
+    ContactList = this.state.contacts.map(contact => getContactListItem(contact));
   }
 
     return (
       <div>
         <ListGroup>
-          {ContactListItem}
+          {ContactList}
         </ListGroup>
       </div>
     );

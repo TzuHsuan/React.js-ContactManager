@@ -5,7 +5,7 @@ import ContactsAPI from '../utils/ContactsAPI';
 export default {
 	recieveContacts: () => {
 		ContactsAPI
-			.getContacts('https://jsonplaceholder.typicode.com/users')
+			.getContacts()
 			.then(contacts => {
 				AppDispatcher.dispatch({
 					actionType: AppConstants.RECIEVE_CONTACTS,
@@ -21,7 +21,7 @@ export default {
 	},
 	saveContact: (contact) => 	{
 		ContactsAPI
-			.saveContact('https://jsonplaceholder.typicode.com/users', contact)
+			.saveContact(contact)
 			.then(contact => {
 				AppDispatcher.dispatch({
 					actionType: AppConstants.RECIEVE_CONTACT,
@@ -37,7 +37,7 @@ export default {
 	},
 	deleteContact: (id) => 	{
 		ContactsAPI
-			.deleteContact('https://jsonplaceholder.typicode.com/users/'+id)
+			.deleteContact(id)
 			.then(contact => {
 				AppDispatcher.dispatch({
 					actionType: AppConstants.DELETE_CONTACT,
