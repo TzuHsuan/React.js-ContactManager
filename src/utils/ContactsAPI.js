@@ -1,11 +1,7 @@
 var firebase = require ('firebase');
 
   var config = {
-    apiKey: "AIzaSyB0bV7VbZvVIsLhwZcubpix49esj3KYAK0",
-    authDomain: "contactmanager-68b01.firebaseapp.com",
-    databaseURL: "https://contactmanager-68b01.firebaseio.com",
-    storageBucket: "contactmanager-68b01.appspot.com",
-    messagingSenderId: "431070863707"
+    //Place FireBase Config Here
   };
   firebase.initializeApp(config);
 

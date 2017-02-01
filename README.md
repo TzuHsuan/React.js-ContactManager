@@ -1,4 +1,7 @@
 #Contact Manager
+##Before Starting
+Fill ContactAPI with firebase config keys
+
 ##Purpose
 
 Allows add, view and delete of contacts stored as JSON objects.
