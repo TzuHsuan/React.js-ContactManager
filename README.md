@@ -1,12 +1,12 @@
-#Contact Manager
-##Before Starting
+# Contact Manager
+## Before Starting
 Fill ContactAPI with firebase config keys
 
-##Purpose
+## Purpose
 
 Allows add, view and delete of contacts stored as JSON objects.
 
-##Tech
+## Tech
 
 Created using [create-react-app](https://github.com/facebookincubator/create-react-app).
 
